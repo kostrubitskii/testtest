@@ -1,18 +1,18 @@
-'use client'
-
-import { TonConnectButton, useTonWallet } from "@tonconnect/ui-react"
-import { useEffect } from "react";
-
+"use client";
+import { TonConnectButton, useTonWallet } from "@tonconnect/ui-react";
 
 export const Main = () => {
-  const wallet = useTonWallet()
+  const wallet = useTonWallet();
   console.log(wallet);
 
-  useEffect(() => {}, [])
-  
+  // if (wallet) {
+  //   const address = wallet.address;
+  // }
+  // console.log(address);
+
   return (
     <div>
       <TonConnectButton />
     </div>
-  )
-}
+  );
+};
