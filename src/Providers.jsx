@@ -6,7 +6,7 @@ import { Provider } from "react-redux";
 
 export const Providers = ({ children }) => {
   return (
-    <TonConnectUIProvider manifestUrl={publicUrl("/tonconnect-manifest.json")}>
+    <TonConnectUIProvider manifestUrl="/tonconnect-manifest.json">
       <Provider store={store}>{children}</Provider>
     </TonConnectUIProvider>
   );
