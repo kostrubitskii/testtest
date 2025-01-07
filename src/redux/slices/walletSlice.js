@@ -3,16 +3,16 @@ import { createSlice } from "@reduxjs/toolkit";
 const walletSlice = createSlice({
   name: "wallet",
   initialState: {
-    adress: null,
+    address: null,
     connected: false,
   },
   reducers: {
     connectWallet: (state, action) => {
-      state.adress = action.payload;
+      state.address = action.payload;
       state.connected = true;
     },
     disconnectWallet: (state) => {
-      state.adress = null;
+      state.address = null;
       state.connected = false;
     },
   },
