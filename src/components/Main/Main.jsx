@@ -10,6 +10,12 @@ export const Main = () => {
   // }
   // console.log(address);
 
+  if (wallet) {
+    const address = wallet.account.address;
+    console.log(address);
+  }
+  
+
   return (
     <div>
       <TonConnectButton />
